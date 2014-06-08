@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE8F015A194514EE005472DB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8F0159194514EE005472DB /* main.swift */; };
+		AE8F015C194514EE005472DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8F015B194514EE005472DB /* AppDelegate.swift */; };
+		AE8F015E194514EE005472DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE8F015D194514EE005472DB /* Images.xcassets */; };
+		AE8F0161194514EE005472DB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8F015F194514EE005472DB /* MainMenu.xib */; };
+		AE8F016D194514EE005472DB /* Welcome_AssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8F016C194514EE005472DB /* Welcome_AssistantTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE8F0167194514EE005472DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE8F014C194514EE005472DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE8F0153194514EE005472DB;
+			remoteInfo = "Welcome Assistant";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE8F0154194514EE005472DB /* Welcome Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Welcome Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE8F0158194514EE005472DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE8F0159194514EE005472DB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AE8F015B194514EE005472DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE8F015D194514EE005472DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AE8F0160194514EE005472DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AE8F0166194514EE005472DB /* Welcome AssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Welcome AssistantTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE8F016B194514EE005472DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE8F016C194514EE005472DB /* Welcome_AssistantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome_AssistantTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE8F0151194514EE005472DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE8F0163194514EE005472DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE8F014B194514EE005472DB = {
+			isa = PBXGroup;
+			children = (
+				AE8F0156194514EE005472DB /* Welcome Assistant */,
+				AE8F0169194514EE005472DB /* Welcome AssistantTests */,
+				AE8F0155194514EE005472DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE8F0155194514EE005472DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE8F0154194514EE005472DB /* Welcome Assistant.app */,
+				AE8F0166194514EE005472DB /* Welcome AssistantTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE8F0156194514EE005472DB /* Welcome Assistant */ = {
+			isa = PBXGroup;
+			children = (
+				AE8F015B194514EE005472DB /* AppDelegate.swift */,
+				AE8F015D194514EE005472DB /* Images.xcassets */,
+				AE8F015F194514EE005472DB /* MainMenu.xib */,
+				AE8F0157194514EE005472DB /* Supporting Files */,
+			);
+			path = "Welcome Assistant";
+			sourceTree = "<group>";
+		};
+		AE8F0157194514EE005472DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE8F0158194514EE005472DB /* Info.plist */,
+				AE8F0159194514EE005472DB /* main.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE8F0169194514EE005472DB /* Welcome AssistantTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE8F016C194514EE005472DB /* Welcome_AssistantTests.swift */,
+				AE8F016A194514EE005472DB /* Supporting Files */,
+			);
+			path = "Welcome AssistantTests";
+			sourceTree = "<group>";
+		};
+		AE8F016A194514EE005472DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE8F016B194514EE005472DB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE8F0153194514EE005472DB /* Welcome Assistant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE8F0170194514EE005472DB /* Build configuration list for PBXNativeTarget "Welcome Assistant" */;
+			buildPhases = (
+				AE8F0150194514EE005472DB /* Sources */,
+				AE8F0151194514EE005472DB /* Frameworks */,
+				AE8F0152194514EE005472DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Welcome Assistant";
+			productName = "Welcome Assistant";
+			productReference = AE8F0154194514EE005472DB /* Welcome Assistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE8F0165194514EE005472DB /* Welcome AssistantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE8F0173194514EE005472DB /* Build configuration list for PBXNativeTarget "Welcome AssistantTests" */;
+			buildPhases = (
+				AE8F0162194514EE005472DB /* Sources */,
+				AE8F0163194514EE005472DB /* Frameworks */,
+				AE8F0164194514EE005472DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE8F0168194514EE005472DB /* PBXTargetDependency */,
+			);
+			name = "Welcome AssistantTests";
+			productName = "Welcome AssistantTests";
+			productReference = AE8F0166194514EE005472DB /* Welcome AssistantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE8F014C194514EE005472DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "OS X Devops";
+				TargetAttributes = {
+					AE8F0153194514EE005472DB = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					AE8F0165194514EE005472DB = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = AE8F0153194514EE005472DB;
+					};
+				};
+			};
+			buildConfigurationList = AE8F014F194514EE005472DB /* Build configuration list for PBXProject "Welcome Assistant" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE8F014B194514EE005472DB;
+			productRefGroup = AE8F0155194514EE005472DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE8F0153194514EE005472DB /* Welcome Assistant */,
+				AE8F0165194514EE005472DB /* Welcome AssistantTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE8F0152194514EE005472DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE8F015E194514EE005472DB /* Images.xcassets in Resources */,
+				AE8F0161194514EE005472DB /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE8F0164194514EE005472DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE8F0150194514EE005472DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE8F015C194514EE005472DB /* AppDelegate.swift in Sources */,
+				AE8F015A194514EE005472DB /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE8F0162194514EE005472DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE8F016D194514EE005472DB /* Welcome_AssistantTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE8F0168194514EE005472DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE8F0153194514EE005472DB /* Welcome Assistant */;
+			targetProxy = AE8F0167194514EE005472DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE8F015F194514EE005472DB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE8F0160194514EE005472DB /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE8F016E194514EE005472DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE8F016F194514EE005472DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AE8F0171194514EE005472DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Welcome Assistant/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AE8F0172194514EE005472DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Welcome Assistant/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AE8F0174194514EE005472DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Welcome Assistant.app/Contents/MacOS/Welcome Assistant";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Welcome AssistantTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		AE8F0175194514EE005472DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Welcome Assistant.app/Contents/MacOS/Welcome Assistant";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Welcome AssistantTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE8F014F194514EE005472DB /* Build configuration list for PBXProject "Welcome Assistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE8F016E194514EE005472DB /* Debug */,
+				AE8F016F194514EE005472DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE8F0170194514EE005472DB /* Build configuration list for PBXNativeTarget "Welcome Assistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE8F0171194514EE005472DB /* Debug */,
+				AE8F0172194514EE005472DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AE8F0173194514EE005472DB /* Build configuration list for PBXNativeTarget "Welcome AssistantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE8F0174194514EE005472DB /* Debug */,
+				AE8F0175194514EE005472DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE8F014C194514EE005472DB /* Project object */;
+}
