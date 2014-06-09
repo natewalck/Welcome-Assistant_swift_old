@@ -16,7 +16,10 @@ class AppController: NSObject {
     @IBOutlet var myCustomView : NSView = nil
     @IBOutlet var myViewController : NSViewController = NSViewController()
     
+//    @IBOutlet var infoViewTitle: NSTextField = NSTextField()
+    
     var customWebViewController: NSViewController = NSViewController(nibName: "customWebViewController", bundle: nil)
+    var customInfoViewController: NSViewController = NSViewController(nibName: "customInfoViewController", bundle: nil)
     
     var currentViewController: NSViewController? = nil
     
@@ -24,8 +27,9 @@ class AppController: NSObject {
     
     @IBAction func backButton(sender : AnyObject) {
         println("Back Button clicked")
-        currentWorkspace.openFile("/tmp")
-        
+        currentViewController?.view.removeFromSuperview()
+        currentViewController = customInfoViewController
+        myCustomView.addSubview(customInfoViewController.view)
     }
     
     
