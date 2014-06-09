@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import Foundation
 
 class AppController: NSObject {
 
@@ -19,8 +20,12 @@ class AppController: NSObject {
     
     var currentViewController: NSViewController? = nil
     
+    let currentWorkspace: NSWorkspace = NSWorkspace.sharedWorkspace()
+    
     @IBAction func backButton(sender : AnyObject) {
         println("Back Button clicked")
+        currentWorkspace.openFile("/tmp")
+        
     }
     
     
