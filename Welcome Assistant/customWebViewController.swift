@@ -7,10 +7,12 @@
 //
 
 import Cocoa
+import WebKit
 
 class customWebViewController: NSViewController {
 
-    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle) {
+    @IBOutlet var webViewContent : WebView
+    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         // Initialization code here.
     }

@@ -11,17 +11,19 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
                             
     @IBOutlet var window: NSWindow
+    @IBOutlet var myCustomView : NSView = nil
+    
+    var theWelcomeScreenController: NSViewController = welcomeScreenController(nibName: "welcomeScreenController", bundle: nil)
 
 
     func applicationDidFinishLaunching(aNotification: NSNotification?) {
         // Insert code here to initialize your application
         NSApp.activateIgnoringOtherApps(true)
+        myCustomView.addSubview(theWelcomeScreenController.view())
     }
 
     func applicationWillTerminate(aNotification: NSNotification?) {
         // Insert code here to tear down your application
     }
 
-
 }
-
