@@ -11,7 +11,9 @@ import Cocoa
 class welcomeScreenController: NSViewController {
 
     @IBOutlet var welcomeScreenTitle : NSTextField
-    var welcomeTitle: String? = "Welcome to Some Compan"
+    @IBOutlet var welcomeScreenImage : NSImageView
+    
+    var welcomeTitle: String? = "Welcome to Some Company"
     
     init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?, welcomeTitle: String?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
