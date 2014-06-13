@@ -20,6 +20,7 @@
 		AE8F017A19451772005472DB /* customWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8F017819451772005472DB /* customWebViewController.swift */; };
 		AE8F017B19451772005472DB /* customWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8F017919451772005472DB /* customWebViewController.xib */; };
 		AE915FE9194AB85100CE7B08 /* Assistant.icns in Resources */ = {isa = PBXBuildFile; fileRef = AE915FE8194AB85100CE7B08 /* Assistant.icns */; };
+		AE915FEB194ABD6600CE7B08 /* watowl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE915FEA194ABD6600CE7B08 /* watowl.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		AE8F017819451772005472DB /* customWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customWebViewController.swift; sourceTree = "<group>"; };
 		AE8F017919451772005472DB /* customWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = customWebViewController.xib; sourceTree = "<group>"; };
 		AE915FE8194AB85100CE7B08 /* Assistant.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Assistant.icns; sourceTree = "<group>"; };
+		AE915FEA194ABD6600CE7B08 /* watowl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = watowl.jpg; path = "Welcome Assistant/watowl.jpg"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE1B4E5E194AC49A00320A0C /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				AE915FEA194ABD6600CE7B08 /* watowl.jpg */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
 		AE8F014B194514EE005472DB = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +101,7 @@
 		AE8F0156194514EE005472DB /* Welcome Assistant */ = {
 			isa = PBXGroup;
 			children = (
+				AE1B4E5E194AC49A00320A0C /* resources */,
 				AE915FE8194AB85100CE7B08 /* Assistant.icns */,
 				AE8F015B194514EE005472DB /* AppDelegate.swift */,
 				AE8F0176194515A6005472DB /* AppController.swift */,
@@ -213,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE915FEB194ABD6600CE7B08 /* watowl.jpg in Resources */,
 				AE8F015E194514EE005472DB /* Images.xcassets in Resources */,
 				AE8F017B19451772005472DB /* customWebViewController.xib in Resources */,
 				AE8F0161194514EE005472DB /* MainMenu.xib in Resources */,

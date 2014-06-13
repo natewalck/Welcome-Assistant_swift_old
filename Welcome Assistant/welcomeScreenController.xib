@@ -17,18 +17,18 @@
             <rect key="frame" x="0.0" y="0.0" width="800" height="640"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EQC-Ks-9E3">
-                    <rect key="frame" x="272" y="364" width="256" height="256"/>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="B8F-5h-HuN"/>
-                </imageView>
                 <textField appearanceType="aqua" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AKQ-fI-dfI">
-                    <rect key="frame" x="18" y="329" width="764" height="27"/>
+                    <rect key="frame" x="18" y="593" width="764" height="27"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="cxg-5M-xP4">
                         <font key="font" metaFont="system" size="24"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EQC-Ks-9E3">
+                    <rect key="frame" x="272" y="192" width="256" height="256"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="B8F-5h-HuN"/>
+                </imageView>
             </subviews>
         </customView>
     </objects>

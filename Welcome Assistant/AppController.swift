@@ -15,12 +15,12 @@ class AppController: NSObject {
     
     @IBOutlet var myCustomView : NSView = nil
     @IBOutlet var myViewController : NSViewController = NSViewController()
-    
+        
     // [ken] had to change the names of your properties because the class and the var had the same name. Classes should start with uppercase.
     var custWebViewController: NSViewController = customWebViewController(nibName: "customWebViewController", bundle: nil)
     var custInfoViewController: NSViewController = customInfoViewController(nibName: "customInfoViewController", bundle: nil)
-    var theWelcomeScreenController: NSViewController = welcomeScreenController(nibName: "welcomeScreenController", bundle: nil, welcomeTitle: "LOLWAT")
-    
+    var theWelcomeScreenController: NSViewController = welcomeScreenController(nibName: "welcomeScreenController", bundle: nil, welcomeTitle: "Welcome to OS X Devops", welcomeImagePath: "/tmp/watowl.jpg")
+
 //    var pageList: NSViewController[] = [theWelcomeScreenController,custInfoViewController,custWebViewController]
 //    var lastPage = pageList.count - 1
 //    var firstPage = pageList.startIndex

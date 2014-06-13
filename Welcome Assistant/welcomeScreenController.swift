@@ -13,10 +13,12 @@ class welcomeScreenController: NSViewController {
     @IBOutlet var welcomeScreenTitle : NSTextField
     @IBOutlet var welcomeScreenImage : NSImageView
     
-    var welcomeTitle: String? = "Welcome to Some Company"
+    var welcomeTitle: String? = nil
+    var welcomeImagePath: String? = nil
     
-    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?, welcomeTitle: String?) {
+    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?, welcomeTitle: String?, welcomeImagePath: String?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        self.welcomeImagePath = welcomeImagePath
         self.welcomeTitle = welcomeTitle
         // Initialization code here.
     }
@@ -24,6 +26,7 @@ class welcomeScreenController: NSViewController {
     override func loadView()  {
         super.loadView()
         welcomeScreenTitle.setStringValue(welcomeTitle)
+        welcomeScreenImage.setImage(NSImage(contentsOfFile: welcomeImagePath))
     }
-    
+
 }

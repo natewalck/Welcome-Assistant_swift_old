@@ -13,6 +13,9 @@ class customInfoViewController: NSViewController {
     @IBOutlet var setInfoViewtitle : NSTextField
     @IBOutlet var setInfoViewBody : NSTextField
     
+    var infoViewTitleText: String? = "1Password Setup"
+    var infoViewBodyText: String? = "1.Open 1Password.app\n2.Set it up\n3. Celebrate"
+    
     init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         // Initialization code here.
@@ -20,6 +23,7 @@ class customInfoViewController: NSViewController {
     
     override func loadView()  {
         super.loadView()
-        setInfoViewtitle.setStringValue("test 123")
+        setInfoViewtitle.setStringValue(infoViewTitleText)
+        setInfoViewBody.setStringValue(infoViewBodyText)
     }
 }

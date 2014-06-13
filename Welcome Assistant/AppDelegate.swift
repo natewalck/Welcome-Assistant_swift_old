@@ -12,8 +12,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                             
     @IBOutlet var window: NSWindow
     @IBOutlet var myCustomView : NSView = nil
+    var welcomeImagePath = "/tmp/watowl.jpg"
+    var welcomeTitleText = "Welcome to OS X Devops"
     
-    var theWelcomeScreenController: NSViewController = welcomeScreenController(nibName: "welcomeScreenController", bundle: nil, welcomeTitle: "LOLWAT")
+    var theWelcomeScreenController: NSViewController = welcomeScreenController(nibName: "welcomeScreenController", bundle: nil, welcomeTitle: "Welcome to OS X Devops", welcomeImagePath: "/tmp/watowl.jpg")
 
     func applicationDidFinishLaunching(aNotification: NSNotification?) {
         // Insert code here to initialize your application

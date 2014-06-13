@@ -12,9 +12,14 @@ import WebKit
 class customWebViewController: NSViewController {
 
     @IBOutlet var webViewContent : WebView
+    
     init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         // Initialization code here.
     }
     
+    override func loadView()  {
+        super.loadView()
+        self.webViewContent.setMainFrameURL("http://www.google.com/landing/2step")
+    }
 }
