@@ -19,7 +19,9 @@
             <subviews>
                 <webView appearanceType="aqua" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IH5-W8-Cic">
                     <rect key="frame" x="20" y="20" width="760" height="600"/>
-                    <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12"/>
+                    <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
+                        <nil key="identifier"/>
+                    </webPreferences>
                 </webView>
             </subviews>
             <point key="canvasLocation" x="474" y="598"/>

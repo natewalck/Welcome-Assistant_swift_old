@@ -11,15 +11,17 @@ import Cocoa
 class welcomeScreenController: NSViewController {
 
     @IBOutlet var welcomeScreenTitle : NSTextField
-
-    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+    var welcomeTitle: String? = "Welcome to Some Compan"
+    
+    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?, welcomeTitle: String?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        self.welcomeTitle = welcomeTitle
         // Initialization code here.
     }
 
     override func loadView()  {
         super.loadView()
-        welcomeScreenTitle.setStringValue("Welcome to SomeCompany")
+        welcomeScreenTitle.setStringValue(welcomeTitle)
     }
     
 }

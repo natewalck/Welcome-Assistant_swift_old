@@ -13,8 +13,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet var window: NSWindow
     @IBOutlet var myCustomView : NSView = nil
     
-    var theWelcomeScreenController: NSViewController = welcomeScreenController(nibName: "welcomeScreenController", bundle: nil)
-
+    var theWelcomeScreenController: NSViewController = welcomeScreenController(nibName: "welcomeScreenController", bundle: nil, welcomeTitle: "LOLWAT")
 
     func applicationDidFinishLaunching(aNotification: NSNotification?) {
         // Insert code here to initialize your application
