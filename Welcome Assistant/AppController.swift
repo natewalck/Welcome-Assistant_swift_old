@@ -11,6 +11,8 @@ import Foundation
 
 class AppController: NSObject {
     
+    let userDefaults = NSUserDefaults.standardUserDefaults()
+    
     @IBOutlet var window : NSWindow
     
     @IBOutlet var myCustomView : NSView = nil
@@ -19,7 +21,7 @@ class AppController: NSObject {
     // [ken] had to change the names of your properties because the class and the var had the same name. Classes should start with uppercase.
     var custWebViewController: NSViewController = customWebViewController(nibName: "customWebViewController", bundle: nil)
     var custInfoViewController: NSViewController = customInfoViewController(nibName: "customInfoViewController", bundle: nil)
-    var theWelcomeScreenController: NSViewController = welcomeScreenController(nibName: "welcomeScreenController", bundle: nil, welcomeTitle: "Welcome to OS X Devops", welcomeImagePath: "/tmp/watowl.jpg")
+    var theWelcomeScreenController: NSViewController = welcomeScreenController(nibName: "welcomeScreenController", bundle: nil, welcomeTitle: "Welcome to OS X Devops", welcomeBody: "lolwat", welcomeImagePath: "/tmp/watowl.jpg")
 
 //    var pageList: NSViewController[] = [theWelcomeScreenController,custInfoViewController,custWebViewController]
 //    var lastPage = pageList.count - 1
@@ -35,11 +37,13 @@ class AppController: NSObject {
     var nextPage: Int = 0
     var previousPage: Int = 0
     
+    var welcomeScreenTextValue: String?
+    var pageList = []
+    
     var nextPageController: NSViewController? = nil
     var previousPageController: NSViewController? = nil
     
     let currentWorkspace: NSWorkspace = NSWorkspace.sharedWorkspace()
-
 
 
     @IBAction func continueButton(sender : AnyObject) {
@@ -125,9 +129,19 @@ class AppController: NSObject {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        println("Next Page \(nextPage)")
+        userDefaults.synchronize()
+//        var welcomeScreenTextValue = userDefaults.stringForKey("WelcomeTitle")
+        welcomeScreenTextValue = userDefaults.stringForKey("WelcomeTitle")
+        pageList = userDefaults.arrayForKey("AssistantPages")
+        for item in pageList {
+            println(item)
+        }
+        
+        println(welcomeScreenTextValue)
+
+//        println("Next Page \(nextPage)")
 //        println("Current Page \(currentPage)")
-        println("Previous Page \(previousPage)")
+//        println("Previous Page \(previousPage)")
     }
 
 }

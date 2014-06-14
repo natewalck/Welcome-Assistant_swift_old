@@ -12,20 +12,24 @@ class welcomeScreenController: NSViewController {
 
     @IBOutlet var welcomeScreenTitle : NSTextField
     @IBOutlet var welcomeScreenImage : NSImageView
+    @IBOutlet var welcomeScreenBody : NSTextField
     
     var welcomeTitle: String? = nil
     var welcomeImagePath: String? = nil
+    var welcomeBody: String? = nil
     
-    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?, welcomeTitle: String?, welcomeImagePath: String?) {
+    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?, welcomeTitle: String?, welcomeBody: String?, welcomeImagePath: String?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         self.welcomeImagePath = welcomeImagePath
         self.welcomeTitle = welcomeTitle
+        self.welcomeBody = welcomeBody
         // Initialization code here.
     }
 
     override func loadView()  {
         super.loadView()
         welcomeScreenTitle.setStringValue(welcomeTitle)
+        welcomeScreenBody.setStringValue(welcomeBody)
         welcomeScreenImage.setImage(NSImage(contentsOfFile: welcomeImagePath))
     }
 

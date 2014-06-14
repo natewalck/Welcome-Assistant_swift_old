@@ -14,7 +14,7 @@ class customInfoViewController: NSViewController {
     @IBOutlet var setInfoViewBody : NSTextField
     
     var infoViewTitleText: String? = "1Password Setup"
-    var infoViewBodyText: String? = "1.Open 1Password.app\n2.Set it up\n3. Celebrate"
+    var infoViewBodyText: String? = "1. Open 1Password.app\n2. Set it up\n3. Celebrate"
     
     init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
