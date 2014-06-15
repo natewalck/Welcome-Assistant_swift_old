@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="view" destination="Hz6-mo-xeY" id="q8Q-fc-3Mv"/>
                 <outlet property="webViewContent" destination="IH5-W8-Cic" id="yEE-0O-rYo"/>
+                <outlet property="webViewTitle" destination="RKg-Fe-BmB" id="G3l-RK-Vai"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
@@ -18,11 +19,19 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <webView appearanceType="aqua" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IH5-W8-Cic">
-                    <rect key="frame" x="20" y="20" width="760" height="600"/>
+                    <rect key="frame" x="20" y="20" width="760" height="563"/>
                     <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
                         <nil key="identifier"/>
                     </webPreferences>
                 </webView>
+                <textField appearanceType="aqua" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RKg-Fe-BmB">
+                    <rect key="frame" x="18" y="591" width="764" height="29"/>
+                    <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Title" id="bNG-6K-bUq">
+                        <font key="font" metaFont="system" size="24"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
             </subviews>
             <point key="canvasLocation" x="474" y="598"/>
         </customView>

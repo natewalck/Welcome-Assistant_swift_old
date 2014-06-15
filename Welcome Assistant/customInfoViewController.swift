@@ -16,9 +16,10 @@ class customInfoViewController: NSViewController {
     var infoViewTitleText: String? = "1Password Setup"
     var infoViewBodyText: String? = "1. Open 1Password.app\n2. Set it up\n3. Celebrate"
     
-    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?, infoTitle: String?, infoBody: String?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        // Initialization code here.
+        self.infoViewTitleText = infoTitle
+        self.infoViewBodyText = infoBody
     }
     
     override func loadView()  {

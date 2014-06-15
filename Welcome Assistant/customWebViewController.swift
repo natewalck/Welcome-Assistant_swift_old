@@ -12,14 +12,22 @@ import WebKit
 class customWebViewController: NSViewController {
 
     @IBOutlet var webViewContent : WebView
+    @IBOutlet var webViewTitle : NSTextField
     
-    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+    var webTitleString: String? = nil
+    var webUrlString: String? = nil
+    
+    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?,
+        webTitle: String?, webUrl: String?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        self.webTitleString = webTitle
+        self.webUrlString = webUrl
         // Initialization code here.
     }
     
     override func loadView()  {
         super.loadView()
-        self.webViewContent.setMainFrameURL("http://www.google.com/landing/2step")
+        self.webViewTitle.setStringValue(webTitleString)
+        self.webViewContent.setMainFrameURL(webUrlString)
     }
 }

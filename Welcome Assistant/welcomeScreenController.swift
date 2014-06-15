@@ -23,7 +23,6 @@ class welcomeScreenController: NSViewController {
         self.welcomeImagePath = welcomeImagePath
         self.welcomeTitle = welcomeTitle
         self.welcomeBody = welcomeBody
-        // Initialization code here.
     }
 
     override func loadView()  {
