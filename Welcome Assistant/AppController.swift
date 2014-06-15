@@ -180,6 +180,7 @@ class AppController: NSObject {
         super.awakeFromNib()
         loadPreferences()
         theWelcomeView = setupWelcomeView(welcomePrefs as NSArray)
+        changeViewController(theWelcomeView)
         pageList += theWelcomeView
 //   Add welcome screen to pageList before setupallviews
         pageList += setupAllViews(prefPageList as NSArray)
