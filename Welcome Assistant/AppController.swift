@@ -17,21 +17,8 @@ class AppController: NSObject {
     
     @IBOutlet var myCustomView : NSView = nil
     @IBOutlet var myViewController : NSViewController = NSViewController()
-        
-    // [ken] had to change the names of your properties because the class and the var had the same name. Classes should start with uppercase.
-//    var custWebViewController: NSViewController = customWebViewController(nibName: "customWebViewController", bundle: nil,
-//                                                                          webTitle: "Setup Google 2FA", webUrl: "http://www.google.com")
-//    
-//    var custInfoViewController: NSViewController = customInfoViewController(nibName: "customInfoViewController", bundle: nil,
-//                                                                            infoTitle: "omg", infoBody: "Please work")
 
-//    var theWelcomeScreenController: NSViewController = welcomeScreenController(nibName: "welcomeScreenController", bundle: nil,
-//                                                                               welcomeTitle: "Welcome to OS X Devops", welcomeBody: "lolwat", welcomeImagePath: "/tmp/watowl.jpg")
     var theWelcomeView: NSViewController!
-
-//    var pageList: NSViewController[] = [theWelcomeScreenController,custInfoViewController,custWebViewController]
-//    var lastPage = pageList.count - 1
-//    var firstPage = pageList.startIndex
     
     var currentViewController: NSViewController? = nil
     
@@ -110,21 +97,15 @@ class AppController: NSObject {
     }
     
     func pageController(button: String) -> (NSViewController, NSViewController) {
-//        let pageList: NSViewController[] = [theWelcomeScreenController,custInfoViewController,custWebViewController, custInfoViewController, custWebViewController, custInfoViewController]
         println(pageList.count)
         println("Next Page \(nextPage)")
-//        println("Current Page \(currentPage)")
         println("Previous Page \(previousPage)")
         if lastPage == nil {
-//            println("Last Page is not configured, setting it up")
             lastPage = pageList.count - 1
-//            println("Last Page = \(lastPage)")
         }
         
         if firstPage == nil {
-//            println("First Page is not configured, setting it up")
             firstPage = pageList.startIndex
-//            println("First Page = \(firstPage)")
         }
 
         
@@ -153,7 +134,6 @@ class AppController: NSObject {
         }
       
         println("Next Page \(nextPage)")
-//        println("Current Page \(currentPage)")
         println("Previous Page \(previousPage)")
         
         return (pageList[previousPage], pageList[nextPage])
@@ -182,7 +162,6 @@ class AppController: NSObject {
         theWelcomeView = setupWelcomeView(welcomePrefs as NSArray)
         changeViewController(theWelcomeView)
         pageList += theWelcomeView
-//   Add welcome screen to pageList before setupallviews
         pageList += setupAllViews(prefPageList as NSArray)
         println(pageList.count)
 

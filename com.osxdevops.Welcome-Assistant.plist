@@ -2,24 +2,51 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>WelcomePage</key>
+	<array>
+		<dict>
+			<key>Body</key>
+			<string>We know you will like it here</string>
+			<key>Title</key>
+			<string>Welcome to my Awesome Company</string>
+		    <key>Image</key>
+		    <string>/tmp/watowl.jpg</string>
+		</dict>
+	</array>
 	<key>AssistantPages</key>
 	<array>
-		<string>info</string>
-		<array>
-			<string>Body</string>
+		<dict>
+			<key>Body</key>
 			<string>Install Firefox by doing stuff</string>
-			<string>Title</string>
+			<key>PageType</key>
+			<string>info</string>
+			<key>Title</key>
 			<string>Install Firefox.app</string>
-		</array>
-		<string>info</string>
-		<array>
-			<string>Body</string>
-			<string>Install Firefox by doing stuff</string>
-			<string>Title</string>
-			<string>Install Firefox.app</string>
-		</array>
+		</dict>
+		<dict>
+			<key>Body</key>
+			<string>http://www.google.com/landing/2step/</string>
+			<key>PageType</key>
+			<string>weburl</string>
+			<key>Title</key>
+			<string>Setup Google 2-Factor Authentication</string>
+		</dict>
+		<dict>
+			<key>Body</key>
+			<string>Install Chrome by doing stuff</string>
+			<key>PageType</key>
+			<string>info</string>
+			<key>Title</key>
+			<string>Install Chrome.app</string>
+		</dict>
+		<dict>
+			<key>Body</key>
+			<string>Install Little Snitch by doing stuff</string>
+			<key>PageType</key>
+			<string>info</string>
+			<key>Title</key>
+			<string>Install Little Snitch.app</string>
+		</dict>
 	</array>
-	<key>WelcomeTitle</key>
-	<string>Welcome to My Company</string>
 </dict>
 </plist>
