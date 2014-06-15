@@ -4,20 +4,22 @@
 <dict>
 	<key>AssistantPages</key>
 	<array>
-		<string>info</string>
-		<array>
-			<string>Body</string>
+		<dict>
+			<key>Body</key>
 			<string>Install Firefox by doing stuff</string>
-			<string>Title</string>
+			<key>PageType</key>
+			<string>info</string>
+			<key>Title</key>
 			<string>Install Firefox.app</string>
-		</array>
-		<string>info</string>
-		<array>
-			<string>Body</string>
-			<string>Install Firefox by doing stuff</string>
-			<string>Title</string>
-			<string>Install Firefox.app</string>
-		</array>
+		</dict>
+		<dict>
+			<key>Body</key>
+			<string>Install 1Password by doing stuff</string>
+			<key>PageType</key>
+			<string>info</string>
+			<key>Title</key>
+			<string>Install 1Password.app</string>
+		</dict>
 	</array>
 	<key>WelcomeTitle</key>
 	<string>Welcome to My Company</string>

@@ -19,14 +19,15 @@ class AppController: NSObject {
     @IBOutlet var myViewController : NSViewController = NSViewController()
         
     // [ken] had to change the names of your properties because the class and the var had the same name. Classes should start with uppercase.
-    var custWebViewController: NSViewController = customWebViewController(nibName: "customWebViewController", bundle: nil,
-                                                                          webTitle: "Setup Google 2FA", webUrl: "http://www.google.com")
-    
-    var custInfoViewController: NSViewController = customInfoViewController(nibName: "customInfoViewController", bundle: nil,
-                                                                            infoTitle: "omg", infoBody: "Please work")
+//    var custWebViewController: NSViewController = customWebViewController(nibName: "customWebViewController", bundle: nil,
+//                                                                          webTitle: "Setup Google 2FA", webUrl: "http://www.google.com")
+//    
+//    var custInfoViewController: NSViewController = customInfoViewController(nibName: "customInfoViewController", bundle: nil,
+//                                                                            infoTitle: "omg", infoBody: "Please work")
 
-    var theWelcomeScreenController: NSViewController = welcomeScreenController(nibName: "welcomeScreenController", bundle: nil,
-                                                                               welcomeTitle: "Welcome to OS X Devops", welcomeBody: "lolwat", welcomeImagePath: "/tmp/watowl.jpg")
+//    var theWelcomeScreenController: NSViewController = welcomeScreenController(nibName: "welcomeScreenController", bundle: nil,
+//                                                                               welcomeTitle: "Welcome to OS X Devops", welcomeBody: "lolwat", welcomeImagePath: "/tmp/watowl.jpg")
+    var theWelcomeView: NSViewController!
 
 //    var pageList: NSViewController[] = [theWelcomeScreenController,custInfoViewController,custWebViewController]
 //    var lastPage = pageList.count - 1
@@ -44,7 +45,9 @@ class AppController: NSObject {
     
     var welcomeScreenTextValue: String?
     var pageList: NSViewController[] = []
-    var prefPageList = []
+    var prefPageList: AnyObject? = nil
+    var welcomePrefs: AnyObject? = nil
+
     
     var nextPageController: NSViewController? = nil
     var previousPageController: NSViewController? = nil
@@ -77,17 +80,17 @@ class AppController: NSObject {
         return currentViewController!
     }
     
-    func setupViewController(type: String, title: String, content: String) -> NSViewController {
+    func setupViewController(type: String, title: String, content: String, image: String?) -> NSViewController {
         var returnViewController: NSViewController!
         switch type {
             case "info":
-                println("Info View")
+//                println("Info View")
                 returnViewController = customInfoViewController(nibName: "customInfoViewController", bundle: nil, infoTitle: title, infoBody: content)
             case "weburl":
-                println("Web View")
+//                println("Web View")
                 returnViewController = customWebViewController(nibName: "customWebViewController", bundle: nil, webTitle: title, webUrl: content)
             default:
-                println("Info View")
+//                println("Info View")
                 returnViewController = customInfoViewController(nibName: "customInfoViewController", bundle: nil, infoTitle: title, infoBody: content)
         }
 
@@ -95,17 +98,20 @@ class AppController: NSObject {
     }
     
 //    func setupAllViews(pagesToSetup: Array<Dictionary<String, String>>) -> NSViewController[] {
-    func setupAllViews(pagesToSetup: Array<Dictionary<String, String>>) {
+    func setupAllViews(pagesToSetup: Array<AnyObject>) -> NSViewController[] {
         var viewControllerList: NSViewController[] = []
         for item in pagesToSetup {
-            println(item["PageType"])
-//            viewControllerList += setupViewController(item["PageType"], title: item["Title"], content: item["Body"])
+            var pageType = item["PageType"] as String
+            var titleValue = item["Title"] as String
+            var bodyValue = item["Body"] as String
+            viewControllerList += setupViewController(pageType, title: titleValue, content: bodyValue, image: nil)
         }
-//        return viewControllerList
+        return viewControllerList
     }
     
     func pageController(button: String) -> (NSViewController, NSViewController) {
 //        let pageList: NSViewController[] = [theWelcomeScreenController,custInfoViewController,custWebViewController, custInfoViewController, custWebViewController, custInfoViewController]
+        println(pageList.count)
         println("Next Page \(nextPage)")
 //        println("Current Page \(currentPage)")
         println("Previous Page \(previousPage)")
@@ -156,29 +162,28 @@ class AppController: NSObject {
     func loadPreferences() {
         userDefaults.synchronize()
         welcomeScreenTextValue = userDefaults.stringForKey("WelcomeTitle")
-        prefPageList = userDefaults.arrayForKey("AssistantPages")
-//         Print all preferences
-                for item in prefPageList {
-                    println(item)
-                    println(item["PageType"].value)
-            }
-//
-//                println(welcomeScreenTextValue)
+        prefPageList = userDefaults.objectForKey("AssistantPages")
+        welcomePrefs = userDefaults.objectForKey("WelcomePage")
     }
-    
-    func makePrefsNative(prefs: NSDictionary) -> Dictionary<String, String> {
-        var tempPref = ["something": "else"]
-        tempPref["PageType"] = prefs["PageType"].value
-        tempPref["Title"] = prefs["Title"].value
-        tempPref["Body"] = prefs["Body"].value
+
+    func setupWelcomeView(pageToSetup: Array<AnyObject>) -> NSViewController  {
+        var item = pageToSetup[0]
+        var titleValue = item["Title"] as String
+        var imagePath = item["Image"] as String
+        var bodyValue = item["Body"] as String
+        var returnView = welcomeScreenController(nibName: "welcomeScreenController", bundle: nil, welcomeTitle: titleValue, welcomeBody: bodyValue, welcomeImagePath: imagePath)
         
-        return tempPref
+        return returnView
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         loadPreferences()
-//        setupAllViews(prefPageList)
+        theWelcomeView = setupWelcomeView(welcomePrefs as NSArray)
+        pageList += theWelcomeView
+//   Add welcome screen to pageList before setupallviews
+        pageList += setupAllViews(prefPageList as NSArray)
+        println(pageList.count)
 
 //        println("Next Page \(nextPage)")
 //        println("Current Page \(currentPage)")
