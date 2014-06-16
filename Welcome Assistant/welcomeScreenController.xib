@@ -33,7 +33,7 @@
                 <textField appearanceType="aqua" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7vG-ds-m0o">
                     <rect key="frame" x="18" y="456" width="764" height="116"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Welcome!" id="4Wo-cp-WPj">
-                        <font key="font" metaFont="system"/>
+                        <font key="font" size="18" name="HelveticaNeue"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
