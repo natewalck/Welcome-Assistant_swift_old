@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6154.17" systemVersion="14A238x" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
+        <deployment defaultVersion="1080" identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6154.17"/>
     </dependencies>
     <objects>
@@ -705,6 +706,8 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <customObject id="wJ7-Gw-a1M" customClass="AppController" customModule="Welcome_Assistant" customModuleProvider="target">
             <connections>
+                <outlet property="backButtonControl" destination="JUq-8E-ZRY" id="LLK-Sw-45A"/>
+                <outlet property="continueButtonControl" destination="rmf-2T-Zj0" id="KuH-bd-3zs"/>
                 <outlet property="myCustomView" destination="ZxZ-4E-zjg" id="BMB-zQ-OlB"/>
                 <outlet property="myViewController" destination="t5x-Ov-SD1" id="Iw9-MD-bcY"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="D0I-NC-whD"/>

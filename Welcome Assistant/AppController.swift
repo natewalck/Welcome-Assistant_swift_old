@@ -18,6 +18,9 @@ class AppController: NSObject {
     @IBOutlet var myCustomView : NSView = nil
     @IBOutlet var myViewController : NSViewController = NSViewController()
 
+    @IBOutlet var continueButtonControl : NSButton
+    @IBOutlet var backButtonControl : NSButton
+    
     var theWelcomeView: NSViewController!
     
     var currentViewController: NSViewController? = nil
@@ -132,6 +135,18 @@ class AppController: NSObject {
                 currentPage = currentPage - 1
             }
         }
+        
+        if currentPage == lastPage {
+            continueButtonControl.setEnabled(false)
+        } else {
+            continueButtonControl.setEnabled(true)
+        }
+        
+        if currentPage == firstPage {
+            backButtonControl.setEnabled(false)
+        } else {
+            backButtonControl.setEnabled(true)
+        }
       
         println("Next Page \(nextPage)")
         println("Previous Page \(previousPage)")
@@ -158,6 +173,8 @@ class AppController: NSObject {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        // Disable backButton intitially
+        backButtonControl.setEnabled(false)
         loadPreferences()
         theWelcomeView = setupWelcomeView(welcomePrefs as NSArray)
         changeViewController(theWelcomeView)
