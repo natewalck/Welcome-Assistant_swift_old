@@ -156,9 +156,16 @@ class AppController: NSObject {
     
     func loadPreferences() {
         userDefaults.synchronize()
-        welcomeScreenTextValue = userDefaults.stringForKey("WelcomeTitle")
+        var defaultPrefsFile = NSBundle.mainBundle().pathForResource("defaultPrefs", ofType: "plist")
+        println(defaultPrefsFile)
+        var defaultPreferences = NSDictionary.dictionaryWithContentsOfFile(defaultPrefsFile) as NSDictionary
+        userDefaults.synchronize()
+        println(defaultPreferences)
+        userDefaults.registerDefaults(defaultPreferences as NSDictionary)
+//        welcomeScreenTextValue = userDefaults.stringForKey("WelcomeTitle")
         prefPageList = userDefaults.objectForKey("AssistantPages")
         welcomePrefs = userDefaults.objectForKey("WelcomePage")
+
     }
 
     func setupWelcomeView(pageToSetup: Array<AnyObject>) -> NSViewController  {
@@ -166,6 +173,9 @@ class AppController: NSObject {
         var titleValue = item["Title"] as String
         var imagePath = item["Image"] as String
         var bodyValue = item["Body"] as String
+        if titleValue == "" {
+            println("no worky")
+        }
         var returnView = welcomeScreenController(nibName: "welcomeScreenController", bundle: nil, welcomeTitle: titleValue, welcomeBody: bodyValue, welcomeImagePath: imagePath)
         
         return returnView
