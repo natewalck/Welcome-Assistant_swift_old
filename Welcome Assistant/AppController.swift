@@ -97,6 +97,7 @@ class AppController: NSObject {
             var pageType = item["PageType"] as String
             var titleValue = item["Title"] as String
             var bodyValue = item["Content"] as String
+
             viewControllerList += setupViewController(pageType, title: titleValue, content: bodyValue, image: nil)
         }
         return viewControllerList
