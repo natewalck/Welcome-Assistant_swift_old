@@ -89,7 +89,7 @@ class AppController: NSObject {
 
         return returnViewController
     }
-    
+
 //    func setupAllViews(pagesToSetup: Array<Dictionary<String, String>>) -> NSViewController[] {
     func setupAllViews(pagesToSetup: Array<AnyObject>) -> NSViewController[] {
         var viewControllerList: NSViewController[] = []
