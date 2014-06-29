@@ -5,7 +5,7 @@
 	<key>AssistantPages</key>
 	<array>
 		<dict>
-			<key>Body</key>
+			<key>Content</key>
 			<string>Nothing Here!</string>
 			<key>PageType</key>
 			<string>info</string>
@@ -16,7 +16,7 @@
 	<key>WelcomePage</key>
 	<array>
 		<dict>
-			<key>Body</key>
+			<key>Content</key>
 			<string>Please place a preference file</string>
 			<key>Image</key>
 			<string></string>

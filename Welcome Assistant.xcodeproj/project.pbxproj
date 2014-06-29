@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE2051661960769500DD8081 /* customEulaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2051641960769500DD8081 /* customEulaController.swift */; };
+		AE2051671960769500DD8081 /* customEulaController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE2051651960769500DD8081 /* customEulaController.xib */; };
+		AE20516A19607FDC00DD8081 /* customImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE20516819607FDC00DD8081 /* customImageViewController.swift */; };
+		AE20516B19607FDC00DD8081 /* customImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE20516919607FDC00DD8081 /* customImageViewController.xib */; };
 		AE4B6AE0194554C900A6F926 /* customInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B6ADE194554C900A6F926 /* customInfoViewController.swift */; };
 		AE57C5E01946BC840052B563 /* customInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE57C5DF1946BC840052B563 /* customInfoViewController.xib */; };
 		AE7D36C8194816DA001A29C4 /* welcomeScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7D36C6194816DA001A29C4 /* welcomeScreenController.swift */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE2051641960769500DD8081 /* customEulaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customEulaController.swift; sourceTree = "<group>"; };
+		AE2051651960769500DD8081 /* customEulaController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = customEulaController.xib; sourceTree = "<group>"; };
+		AE20516819607FDC00DD8081 /* customImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customImageViewController.swift; sourceTree = "<group>"; };
+		AE20516919607FDC00DD8081 /* customImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = customImageViewController.xib; sourceTree = "<group>"; };
 		AE4B6ADE194554C900A6F926 /* customInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customInfoViewController.swift; sourceTree = "<group>"; };
 		AE57C5DF1946BC840052B563 /* customInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = customInfoViewController.xib; sourceTree = "<group>"; };
 		AE7D36C6194816DA001A29C4 /* welcomeScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = welcomeScreenController.swift; sourceTree = "<group>"; };
@@ -112,6 +120,10 @@
 				AE8F017919451772005472DB /* customWebViewController.xib */,
 				AE4B6ADE194554C900A6F926 /* customInfoViewController.swift */,
 				AE57C5DF1946BC840052B563 /* customInfoViewController.xib */,
+				AE20516819607FDC00DD8081 /* customImageViewController.swift */,
+				AE20516919607FDC00DD8081 /* customImageViewController.xib */,
+				AE2051641960769500DD8081 /* customEulaController.swift */,
+				AE2051651960769500DD8081 /* customEulaController.xib */,
 				AE7D36C6194816DA001A29C4 /* welcomeScreenController.swift */,
 				AE7D36C7194816DA001A29C4 /* welcomeScreenController.xib */,
 			);
@@ -231,6 +243,8 @@
 				AE57C5E01946BC840052B563 /* customInfoViewController.xib in Resources */,
 				AE7D36C9194816DA001A29C4 /* welcomeScreenController.xib in Resources */,
 				AE915FE9194AB85100CE7B08 /* Assistant.icns in Resources */,
+				AE20516B19607FDC00DD8081 /* customImageViewController.xib in Resources */,
+				AE2051671960769500DD8081 /* customEulaController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,8 +266,10 @@
 				AE8F015C194514EE005472DB /* AppDelegate.swift in Sources */,
 				AE8F015A194514EE005472DB /* main.swift in Sources */,
 				AE4B6AE0194554C900A6F926 /* customInfoViewController.swift in Sources */,
+				AE2051661960769500DD8081 /* customEulaController.swift in Sources */,
 				AE7D36C8194816DA001A29C4 /* welcomeScreenController.swift in Sources */,
 				AE8F0177194515A6005472DB /* AppController.swift in Sources */,
+				AE20516A19607FDC00DD8081 /* customImageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

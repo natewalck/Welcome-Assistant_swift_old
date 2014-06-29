@@ -79,6 +79,9 @@ class AppController: NSObject {
             case "weburl":
 //                println("Web View")
                 returnViewController = customWebViewController(nibName: "customWebViewController", bundle: nil, webTitle: title, webUrl: content)
+            case "image":
+//                println("Image View")
+                returnViewController = customImageViewController(nibName: "customImageViewController", bundle: nil, imageTitle: title, imageViewPath: content)
             default:
 //                println("Info View")
                 returnViewController = customInfoViewController(nibName: "customInfoViewController", bundle: nil, infoTitle: title, infoBody: content)
@@ -93,7 +96,7 @@ class AppController: NSObject {
         for item in pagesToSetup {
             var pageType = item["PageType"] as String
             var titleValue = item["Title"] as String
-            var bodyValue = item["Body"] as String
+            var bodyValue = item["Content"] as String
             viewControllerList += setupViewController(pageType, title: titleValue, content: bodyValue, image: nil)
         }
         return viewControllerList
