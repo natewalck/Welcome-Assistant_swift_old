@@ -663,17 +663,17 @@
         <window title="Welcome Assistant" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="840" height="721"/>
+            <rect key="contentRect" x="335" y="390" width="1088" height="700"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="840" height="721"/>
+                <rect key="frame" x="0.0" y="0.0" width="1088" height="700"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <customView appearanceType="aqua" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZxZ-4E-zjg">
-                        <rect key="frame" x="20" y="61" width="800" height="640"/>
+                        <rect key="frame" x="20" y="40" width="1048" height="640"/>
                     </customView>
                     <button appearanceType="aqua" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JUq-8E-ZRY">
-                        <rect key="frame" x="349" y="13" width="72" height="32"/>
+                        <rect key="frame" x="452" y="3" width="72" height="32"/>
                         <buttonCell key="cell" type="push" title="Back" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="WYF-w9-ce6">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -683,7 +683,7 @@
                         </connections>
                     </button>
                     <button appearanceType="aqua" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rmf-2T-Zj0">
-                        <rect key="frame" x="421" y="13" width="96" height="32"/>
+                        <rect key="frame" x="524" y="3" width="96" height="32"/>
                         <buttonCell key="cell" type="push" title="Continue" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Anu-SZ-q9i">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -694,7 +694,7 @@
                     </button>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="441" y="454.5"/>
+            <point key="canvasLocation" x="441" y="454"/>
         </window>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Welcome_Assistant" customModuleProvider="target">
             <connections>

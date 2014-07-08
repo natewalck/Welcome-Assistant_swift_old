@@ -32,6 +32,7 @@ class AppController: NSObject {
     var currentPage: Int = 0
     var nextPage: Int = 0
     var previousPage: Int = 0
+    var endOfAssistant: Bool = false
     
     var welcomeScreenTextValue: String?
     var pageList: NSViewController[] = []
@@ -48,13 +49,32 @@ class AppController: NSObject {
     @IBAction func continueButton(sender : AnyObject) {
         println("Continue Button clicked")
         var (previous, next) = pageController("continue")
+
         currentViewController = changeViewController(next)
+
+        if currentPage == lastPage {
+            if endOfAssistant {
+                println("WAT")
+                NSApplication.sharedApplication().terminate(nil)
+            }
+        }
+
+        if currentPage == lastPage {
+            endOfAssistant = true
+        } else {
+            endOfAssistant = false
+        }
     }
 
     @IBAction func backButton(sender : AnyObject) {
         println("Back Button clicked")
         var (previous, next) = pageController("back")
         currentViewController = changeViewController(previous)
+        if currentPage == lastPage {
+            endOfAssistant = true
+        } else {
+            endOfAssistant = false
+        }
     }
 
     func changeViewController(viewName:NSViewController) -> NSViewController {
@@ -141,9 +161,9 @@ class AppController: NSObject {
         }
         
         if currentPage == lastPage {
-            continueButtonControl.setEnabled(false)
+            continueButtonControl.setTitle("Finish")
         } else {
-            continueButtonControl.setEnabled(true)
+            continueButtonControl.setTitle("Continue")
         }
         
         if currentPage == firstPage {
