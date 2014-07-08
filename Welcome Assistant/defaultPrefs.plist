@@ -16,7 +16,7 @@
 	<key>WelcomePage</key>
 	<array>
 		<dict>
-			<key>Content</key>
+			<key>Body</key>
 			<string>Please place a preference file</string>
 			<key>Image</key>
 			<string></string>

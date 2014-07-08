@@ -54,7 +54,6 @@ class AppController: NSObject {
 
         if currentPage == lastPage {
             if endOfAssistant {
-                println("WAT")
                 NSApplication.sharedApplication().terminate(nil)
             }
         }
