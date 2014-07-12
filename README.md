@@ -38,6 +38,7 @@ Here is an example of one of each page type:
 
     <key>AssistantPages</key>
     <array>
+        <!-- Info Page -->
         <dict>
             <key>PageType</key>
             <string>info</string>
@@ -56,6 +57,7 @@ This machine is given to you in good faith. If the machine is destroyed or other
 By clicking Continue, you agree to the above equipment use policy upon pain of death or great suffering.
 </string>
         </dict>
+        <!-- Web View Page -->
         <dict>
             <key>PageType</key>
             <string>weburl</string>
@@ -64,6 +66,7 @@ By clicking Continue, you agree to the above equipment use policy upon pain of d
             <key>Content</key>
             <string>http://www.google.com/landing/2step/</string>
         </dict>
+        <!-- Image View Page -->
         <dict>
             <key>PageType</key>
             <string>image</string>
