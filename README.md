@@ -14,8 +14,8 @@ The plist consists of two different arrays, one for the Welcome page (WelcomePag
 Here are examples of each page type:
 
 
-WelcomePage
-######
+#####WelcomePage#####
+
 ```
     <key>WelcomePage</key>
     <array>
@@ -31,9 +31,8 @@ WelcomePage
 ```
 
 
-AssistantPages
-######
-Here is an example of one of each page type:o
+#####AssistantPages#####
+Here is an example of one of each page type:
 
 ```
 
