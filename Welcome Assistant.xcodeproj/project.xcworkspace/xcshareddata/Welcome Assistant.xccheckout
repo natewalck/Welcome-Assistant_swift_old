@@ -10,31 +10,31 @@
 	<string>Welcome Assistant</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>CC6097CC-E8F0-4E29-9C77-12C0461CF2B3</key>
-		<string>ssh://github.com/natewalck/Welcome-Assistant.git</string>
+		<key>41AE5C406C8BD39932991D22793C8D0BBF41F50E</key>
+		<string>github.com:natewalck/Welcome-Assistant.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Welcome Assistant.xcodeproj/project.xcworkspace</string>
+	<string>Welcome Assistant.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>CC6097CC-E8F0-4E29-9C77-12C0461CF2B3</key>
+		<key>41AE5C406C8BD39932991D22793C8D0BBF41F50E</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/natewalck/Welcome-Assistant.git</string>
+	<string>github.com:natewalck/Welcome-Assistant.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>CC6097CC-E8F0-4E29-9C77-12C0461CF2B3</string>
+	<string>41AE5C406C8BD39932991D22793C8D0BBF41F50E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>CC6097CC-E8F0-4E29-9C77-12C0461CF2B3</string>
+			<string>41AE5C406C8BD39932991D22793C8D0BBF41F50E</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Welcome Assistant</string>
+			<string>Welcome-Assistant</string>
 		</dict>
 	</array>
 </dict>
